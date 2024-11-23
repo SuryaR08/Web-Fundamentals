@@ -1,0 +1,56 @@
+caption{
+    margin: 10px 0 3px 0;
+    background-color: rgba(24, 7, 121, 0.63);
+    color: white;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px;
+    font-size: xx-large;
+}
+
+.time-table {
+    margin: 100px 250px;
+    border-collapse: collapse;
+    text-align: center;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 3px solid #070f83;
+}
+
+.time-table th,
+.time-table td {
+    border: 0.1px solid #070f8328;
+    padding: 10px;
+}
+
+.time-table th {
+    background-color: #2030bed2;
+    color: white;  
+}
+
+.time-table td:hover {
+    background-color: #f1f1f1;
+}
+
+.time-table td:hover::after {
+    content: attr(data-info);
+    background-color: #333;
+    position: fixed;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.yellow{
+    background-color: rgba(250, 213, 6, 0.384);
+}
+
+.purple{
+    background-color: rgba(187, 0, 187, 0.308);
+}
+
+.time-table td:first-child,
+.time-table th:first-child {
+    border-right: 3px solid #070f83;
+}
